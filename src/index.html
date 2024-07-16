@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Meet landing page</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body
+    class="flex flex-col justify-between items-center pt-14 h-full w-dvw gap-10 overflow-x-hidden"
+  >
+    <!-- Header Section -->
+    <header>
+      <img src="logo.svg" alt="" class="h-12" />
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full flex flex-col gap-10">
+      <!-- Hero Section -->
+      <section
+        class="md:justify-between md:flex-row flex items-center flex-col gap-6 w-full"
+      >
+        <!-- Left and Primary Image container -->
+        <div
+          class="md:hidden w-full flex items-center justify-center overflow-hidden"
+        >
+          <img
+            src="assets/tablet/image-hero.png"
+            alt=""
+            class="min-w-[35rem] w-[60rem] max-w-[40rem] md:hidden sm:hidden"
+          />
+          <img
+            src="assets/tablet/image-hero.png"
+            alt=""
+            class="md:hidden sm:block hidden min-w-[60rem] container mx-auto"
+          />
+        </div>
+        <img
+          src="assets/desktop/image-hero-left.png"
+          alt=""
+          class="md:block min-w-5 max-w-96 sm:hidden hidden container mx-auto"
+        />
+
+        <div class="flex flex-col items-center justify-center gap-10">
+          <h1
+            class="md:text-4xl font-extrabold text-[4rem] text-gray-700 container mx-auto text-center"
+          >
+            Group Chat for Everyone
+          </h1>
+          <p
+            class="text-gray-400 font-light text-2xl text-center max-w-[30rem] leading-loose"
+          >
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <!-- Button Container -->
+          <div class="sm:flex-row flex gap-2 flex-col">
+            <button
+              class="bg-[#4D96A9] px-6 py-4 rounded-full text-white font-bold"
+            >
+              Download
+              <p class="inline-block font-bold text-opacity-60 text-white">
+                v1.3
+              </p>
+            </button>
+
+            <button
+              class="bg-[#855FB2] px-6 py-4 rounded-full text-white font-bold"
+            >
+              What is it?
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Image Container for md: and above -->
+        <img
+          src="assets/desktop/image-hero-right.png"
+          alt=""
+          class="md:block min-w-5 max-w-96 sm:hidden hidden container mx-auto w-full"
+        />
+      </section>
+
+      <!-- Main Numbered Section -->
+      <section class="flex items-center flex-col justify-center gap-10 p-10">
+        <!-- Circle / Line Item 1 -->
+        <div class="flex flex-col items-center">
+          <div class="border-l-2 border-solid border-gray-400 h-36"></div>
+          <div
+            class="border-2 border-gray-400 rounded-full size-24 flex items-center justify-center"
+          >
+            <h1 class="font-extrabold text-gray-400">01</h1>
+          </div>
+        </div>
+
+        <!-- Images -->
+        <div class="flex flex-wrap items-center justify-evenly gap-4">
+          <img
+            src="./assets/desktop/image-woman-in-videocall.jpg"
+            alt=""
+            class="rounded-lg size-52"
+          />
+          <img
+            src="./assets/desktop/image-women-videochatting.jpg"
+            alt=""
+            class="rounded-lg size-52"
+          />
+          <img
+            src="./assets/desktop/image-men-in-meeting.jpg"
+            alt=""
+            class="rounded-lg size-52"
+          />
+          <img
+            src="./assets/desktop/image-man-texting.jpg"
+            alt=""
+            class="rounded-lg size-52"
+          />
+        </div>
+
+        <h2 class="text-[#5391A7] font-bold tracking-widest">
+          BUILT FOR MODERN USE
+        </h2>
+        <h1
+          class="font-black text-[4rem] tracking-normal text-center max-w-[42rem]"
+        >
+          Smarter meetings, all in one place
+        </h1>
+        <p
+          class="text-center text-2xl leading-loose text-gray-500 max-w-[49rem]"
+        >
+          Send messages, share files, show your screen, and record your meetings
+          — all in one workspace. Control who can join with invite-only team
+          access, data encryption, and data export.
+        </p>
+
+        <!-- Circle / Line Item 2 -->
+        <div class="flex flex-col items-center">
+          <div class="border-l-2 border-solid border-gray-400 h-36"></div>
+          <div
+            class="border-2 border-gray-400 rounded-full size-24 flex items-center justify-center"
+          >
+            <h1 class="font-extrabold text-gray-400">02</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer
+      class="sm:bg-[url('./assets/tablet/image-footer.jpg')] w-full h-full flex flex-col items-center justify-center bg-[url('./assets/mobile/image-footer.jpg')] bg-top bg-no-repeat bg-cover"
+    >
+      <div
+        class="bg-[#4C8D9E] bg-opacity-90 h-full w-full p-10 flex flex-col items-center justify-center gap-10"
+      >
+        <h1 class="text-white text-5xl font-bold max-w-96 text-center">
+          Experience more together
+        </h1>
+        <h2 class="text-white text-center text-2xl max-w-[42rem] font-thin">
+          Stay connected with reliable HD meetings and unlimited one-on-one and
+          group video sessions.
+        </h2>
+
+        <button
+          class="bg-[#855FB2] px-6 py-4 rounded-full text-white font-bold"
+        >
+          Download
+          <p class="inline-block font-bold text-opacity-60 text-white">v1.3</p>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
